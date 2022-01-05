@@ -7,11 +7,6 @@ bNN<-data$bNN;
 processID<-data$processID;
 
 plot(a,b,xlim=c(0,10.75),ylim=c(0,10.75),pch=20,cex=0,col=rgb(0,0,0),xlab="",ylab="",axes=TRUE  );
-
-#segments(a,b,aNN,bNN,col=rgb(0,0,0)); # arrows segments
-#https://stat.ethz.ch/R-manual/R-devel/library/graphics/html/arrows.html
-
-#arrows(a, b, aNN, bNN, length = 0.10, angle = 10, code = 2,col=rgb(0.8,0.8,0.8));
 arrows(a, b, aNN, bNN, length = 0.10, angle = 10, code = 2,col=rgb(0,0,0));
 
 
