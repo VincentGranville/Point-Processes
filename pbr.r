@@ -1,4 +1,4 @@
-data<-read.table("c:/Users/vince/tex/pb_r.txt",header=TRUE);
+data<-read.table("c:/Users/vince/tex/pb_r.txt",header=TRUE); 
 
 a<-data$a;
 b<-data$b;
