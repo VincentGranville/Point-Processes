@@ -5,6 +5,8 @@
 # Includes a built-in density estimation technique based on histogram equalization,
 # correction for boundary effect, color palette management, and image filtering to 
 # detect clusters, with manipulations at the pixel level.  
+#
+# This library is used in PB_NN.pl
 
 sub GD_Maps {
 
