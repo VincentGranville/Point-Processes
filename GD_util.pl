@@ -16,7 +16,7 @@ sub GD_Maps {
 #   $img_clusters_name: name of output image (PNG file where each color relates to a 
 #       particular point process in a mixture or combination of multiple processes)
 #   $img_density_name: name of output image (PNG file where each grey level relates to
-#       the concentration or density of points at a particular location (dark if high)
+#       the concentration or density of points at a particular location; dark if high)
 #
 
 use GD::Simple; 
