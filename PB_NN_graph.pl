@@ -32,7 +32,7 @@ for ($i=0; $i<$n; $i++) {
 
   $idx=$point[$i];
   $substring="~$NNIdx[$idx]";
-  $string="$hash{$idx}";
+  $string="$hash{$idx}";  
   if ((index($string, $substring) == -1)&&($substring ne "~")) {
     $hash{$idx}=$hash{$idx}."~$NNIdx[$idx]";
   }
