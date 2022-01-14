@@ -41,7 +41,7 @@ for ($i=0; $i<$Nprocess; $i++) {
 $processID=0;
 $string="\t"; 
 
-open(OUT,">PN_NN.txt");  # the points of the process (single realization here)
+open(OUT,">PB_NN.txt");  # the points of the process (single realization here)
 open(OUT2,">PB_NN_mod.txt");  # the same points modulo 2/lambda both in x and y directions
 
 $m=0;
