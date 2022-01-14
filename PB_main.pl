@@ -29,7 +29,7 @@ $r=0.5;        # to compute E[T^r]
 $n1=10000;  
 $n2=30000;  
 
-open(OUT,"> pb.txt");    # computations saved in file pb.txt
+open(OUT,"> PB_main.txt");    # computations saved in file pb.txt
 print OUT "Type\tlambda\ts\ta\tb\tr\tE[N]\tVar[N]\tP[N=0]\t";
 print OUT "E[T]\tVar[T]\tE[T^r]\n";
 
