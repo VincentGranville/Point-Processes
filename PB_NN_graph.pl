@@ -12,7 +12,7 @@
 # $NNIdx[$idx] = index of nearest point to n-th point
 
 $n=0;
-open(IN,"<pbdistfull.txt"); # input file
+open(IN,"<PB_dist_full.txt"); # input file
 while ($inp=<IN>) {
   $inp=~s/\n//g;
   @aux=split(/\t/,$inp);
