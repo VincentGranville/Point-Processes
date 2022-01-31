@@ -90,7 +90,7 @@ sub GD_Maps {
         if ($quant < 0.08) { 
             $densityColorHash{$density}=0;
         } elsif ($quant < 0.18) {
-            $densityColorHash{$density}=30;
+            $densityColorHash{$density}=30; 
         } elsif ($quant < 0.28) {
             $densityColorHash{$density}=55;
         } elsif ($quant < 0.42) {
