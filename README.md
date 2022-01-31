@@ -6,7 +6,7 @@ To access the spreadsheets, visit the Wiki page, <a href="https://github.com/Vin
 
 <b>Source code</b>
 <ul>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_main.pl">PB_main.pl</a></li> - Compute one-dimensional stats
+  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_main.pl">PB_main.pl</a> - Compute one-dimensional stats</li>
 </ul>
 
 <b>Data sets</b>
