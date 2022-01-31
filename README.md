@@ -18,7 +18,6 @@ To access the spreadsheets, visit the Wiki page, <a href="https://github.com/Vin
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN_dist_small.txt">PB_NN_dist_small.txt</a> - Nearest neighbor distances</li>
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN_dist_full.txt">PB_NN_dist_full.txt</a> - Nearest neighbor distances (detailed)</li>
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN_mod.txt">PB_NN_mod.txt</a> - Points of the process, modulo 2</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_radial.txt">PB_radial.txt</a> - Output of PB_radial.pl</li>
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_cc.txt">PB_cc.txt</a> - Output file of PB_NN_graph.pl</li>
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_r.txt">PB_r.txt</a> - Input for PB_NN_arrows.pl, output of PB_NN.pl</li>
 </ul>
