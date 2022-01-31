@@ -7,7 +7,6 @@ To access the spreadsheets, visit the Wiki page, <a href="https://github.com/Vin
 <b>Source code</b>
 <ul>
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_radial.pl">PB_radial.pl</a> - Simulation of 2D radial cluster process</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN_graph.pl">PB_NN_graph.pl</a> - Find connected components in undirected graph</li>
 </ul>
 
 <b>Data sets</b>
