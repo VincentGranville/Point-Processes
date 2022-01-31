@@ -4,11 +4,6 @@ Material related to my upcoming textbook <i>Off-the-beaten-path Tutorial: Stocha
 
 To access the spreadsheets, visit the Wiki page, <a href="https://github.com/VincentGranville/Point-Processes/wiki/Stochastic-Point-Processes-Textbook,-Volume-1">here</a>. This repository contains the following files:
 
-<b>Source code</b>
-<ul>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_radial.pl">PB_radial.pl</a> - Simulation of 2D radial cluster process</li>
-</ul>
-
 <b>Data sets</b>
 <ul>
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_main.txt">PB_main.txt</a> - One dimensional stats, output of PB_main.pl</li>
