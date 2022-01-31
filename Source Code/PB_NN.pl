@@ -19,7 +19,7 @@ for ($i=0; $i<$Nprocess; $i++) {
     # $i TABs separating x and y coordinates in output file for points
     # originating from process $i; Used to easily create a scatterplot in Excel 
     # with a different color for each process.
-    $sep=$sep."\t";  
+    $sep=$sep."\t";   
 }
 
 $processID=0;
