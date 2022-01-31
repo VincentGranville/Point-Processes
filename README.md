@@ -9,12 +9,22 @@ To access the spreadsheets, visit the Wiki page, <a href="https://github.com/Vin
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_main.pl">PB_main.pl</a> - Compute one-dimensional stats</li>
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_radial.pl">PB_radial.pl</a> - Simulation of 2D radial cluster process</li>
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN.pl">PB_NN.pl</a> - Nearest neighbors core statistics</li>
+  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN_graph.pl">PB_NN_graph.pl</a> - Find connected components in undirected graph</li>
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/GD_util.pl">GD_util.pl</a> - Home-made image processing library</li>
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN_arrows.r">PB_NN_arrows.r</a> - Produces nearest neighbor graph (image)</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN_graph.pl">PB_NN_graph.pl</a> - Find connected components in undirected graph</li>
 </ul>
 
 <b>Data sets</b>
+<ul>
+  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_main.txt">PB_main.txt</a> - One dimensional stats, output of PB_main.pl</li>
+  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN.txt">PB_NN.txt</a> - Points of the process (see PB_NN.pl)</li>
+  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_cc.txt">PB_cc.txt</a> - Output file of PB_NN_graph.pl</li>
+  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN_dist_small.txt">PB_NN_dist_small.txt</a> - Nearest neighbor distances</li>
+  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN_dist_full.txt">PB_NN_dist_full.txt</a> - Nearest neighbor distances (detailed)</li>
+  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_NN_mod.txt">PB_NN_mod.txt</a> - Points of the process, modulo 2</li>
+  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_r.txt">PB_r.txt</a> - Input for PB_NN_arrows.pl, output of PB_NN.pl</li>
+  <li><a href=""></a> - </li>
+</ul>
 
 <b>Images</b>
 
