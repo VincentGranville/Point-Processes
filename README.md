@@ -26,19 +26,6 @@ To access the spreadsheets, visit the Wiki page, <a href="https://github.com/Vin
   <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_r.txt">PB_r.txt</a> - Input for PB_NN_arrows.pl, output of PB_NN.pl</li>
 </ul>
 
-<b>Images</b>
-<ul>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB-cp1.PNG">PB-cp1.PNG</a> - Radial cluster process 1</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB-cp2.PNG">PB-cp2.PNG</a> - Radial cluster process 2</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB-hexa.png">PB-hexa.png</a> - Process with hexagonal lattice</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB-index.PNG">PB-index.PNG</a> - Link between index and state space</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB-map.PNG">PB-map.PNG</a> - Supervised versus unsupervised clustering</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB-residues.PNG">PB-residues.PNG</a> - 5-interlacing, original vs residues</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_Rdist.PNG">PB_Rdist.PNG</a> - Distance between a point and its lattice position</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_elbow1.PNG">PB_elbow1.PNG</a> - Elbow rule (Brownian motion)</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_elbow2.PNG">PB_elbow2.PNG</a> - Image: Elbow rule (Riemann zeta function)</li>
-  <li><a href="https://github.com/VincentGranville/Point-Processes/blob/main/PB_rayleigh.PNG">PB_rayleigh.PNG</a> - Rayleigh test</li>
-</ul>
 
 
 
