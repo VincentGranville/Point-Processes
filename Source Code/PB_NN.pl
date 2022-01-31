@@ -6,7 +6,7 @@ use warnings;
 $Nprocess=5;       # number of processes in the process superimposition
 $seed=82431;      # arbitrary number
 srand($seed);   # initialize random generator
-$s=0.15; # .15;        # scaling factor
+$s=0.15;        # scaling factor
 $epsilon=0.0000000001; # for numerical stability
 
 $sep="\t";      # TAB character 
@@ -19,7 +19,7 @@ for ($i=0; $i<$Nprocess; $i++) {
     # $i TABs separating x and y coordinates in output file for points
     # originating from process $i; Used to easily create a scatterplot in Excel 
     # with a different color for each process.
-    $sep=$sep."\t";   
+    $sep=$sep."\t";  
 }
 
 $processID=0;
@@ -127,9 +127,7 @@ close(OUT);
 
 require './GD_util.pl';
 
-$window=20;
+$window=20; 
 $nloop=3;      # number of times the image is filtered 
 
-GD_Maps($window,$nloop,"PB-cluster4.png","PB-density4.png",@bitmap);
-
-
+GD_Maps($window,$nloop,"PB-cluster3.png","PB-density3.png",@bitmap);
