@@ -4,4 +4,5 @@ See my <a href="https://github.com/VincentGranville/Point-Processes">my book</a>
 <ul>
   <li><a href="https://youtu.be/H77ULp6HVsE">Rienmann zeta function</a></li>
   <li><a href="https://youtu.be/cCHSU4NyPlo">Rienmann zeta function, randomized</a></li>
+  <li><a href="https://youtu.be/dNPSEh-X6uw">Fractal supervised classidication</a></li>
 </ul>
