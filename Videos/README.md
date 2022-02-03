@@ -12,5 +12,4 @@ See my <a href="https://github.com/VincentGranville/Point-Processes">my book</a>
 The data set for the Riemann zeta function (two orbits) is in the spreadsheet <a href="https://github.com/VincentGranville/Point-Processes/tree/main/Spreadsheets">PB_inference.xlsx</a>. See columns T to Y in the <i>Video Riemann</i> tab. It is then processed by the 
 <a href="https://github.com/VincentGranville/Point-Processes/blob/main/Videos/av_demo.r">av_demo.r</a> R program to produce the video.
 
-The data set for fractal supervised clustering is produced by the Perl script  
-<a href="https://github.com/VincentGranville/Point-Processes/blob/main/Videos/PB_clustering_video.pl">PB_clustering_video.pl</a>. This script produces <code>nloop</code> PNG images: these are the frames of the video.
+The data set for fractal supervised clustering is produced by the Perl script  <a href="https://github.com/VincentGranville/Point-Processes/blob/main/Videos/PB_clustering_video.pl">PB_clustering_video.pl</a>. This script produces <code>nloop</code> PNG images: these are the frames of the video.
