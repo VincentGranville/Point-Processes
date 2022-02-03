@@ -13,3 +13,5 @@ The data set for the Riemann zeta function (two orbits) is in the spreadsheet <a
 <a href="https://github.com/VincentGranville/Point-Processes/blob/main/Videos/av_demo.r">av_demo.r</a> R program to produce the video.
 
 The data set for fractal supervised clustering is produced by the Perl script  <a href="https://github.com/VincentGranville/Point-Processes/blob/main/Videos/PB_clustering_video.pl">PB_clustering_video.pl</a>. This script produces <code>nloop</code> PNG images: these are the frames of the video.
+
+Read my article <a href="https://www.datasciencecentral.com/data-animation-much-easier-than-you-think/">Data Animation: Much Easier than you Think!</a> for more details. 
