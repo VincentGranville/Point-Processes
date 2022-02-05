@@ -1,1 +1,1 @@
-Contains the spreadsheets.
+Download the spreadsheets.
