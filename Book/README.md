@@ -1,4 +1,4 @@
-Coming soo. All the material here is from this upcoming book. Extracts from the books are available in the following folders. More will be added soon.
+Coming soo. Other material is available in the following folders:
 
 <ul>
   <li><a href="https://github.com/VincentGranville/Point-Processes/tree/main/Videos">Videos</a></li>
