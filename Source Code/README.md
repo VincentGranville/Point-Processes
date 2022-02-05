@@ -1,1 +1,1 @@
-Contains the source code.
+View or download the source code.
