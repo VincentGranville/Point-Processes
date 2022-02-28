@@ -1,8 +1,9 @@
 The book is published by <a href="http://www.datashaping.com">Data Shaping Solutions, LLC</a>. It is currently available on the following platforms:
 
 <ul> 
-  <li><a hrefs="https://bit.ly/3vr6ka5">Lulu</a></li>
+  <li><a href="https://bit.ly/3vr6ka5">Lulu</a></li>
 </ul>
+
 This folder contains the following extracts from the: table of content, index, introduction, bibliography, target audience, and the list of figures. Source code, videos, Excel spreadsheets, data sets are accessible in the following folders: 
 
 <ul>
