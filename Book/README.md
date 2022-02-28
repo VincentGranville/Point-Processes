@@ -4,7 +4,11 @@ This scratch course on stochastic processes covers significantly more material t
 
 The textbook (96 pages) is published by <a href="http://www.datashaping.com">Data Shaping Solutions, LLC</a>. It is currently available on <a href="https://bit.ly/3vr6ka5">Lulu</a>. 
 
+<img src="https://github.com/VincentGranville/Point-Processes/blob/main/Book/av_demo1000.png" width="500" height="500" class="center">
+
 <h3>Shared Files</h3>
+
+The above picture is from one of the videos (data animations) in the textbook. 
 
 This folder contains the <a href="https://github.com/VincentGranville/Point-Processes/blob/main/Book/PB-TOC.pdf">introduction</a>, <a href="https://github.com/VincentGranville/Point-Processes/blob/main/Book/PB-TOC.pdf">table of content</a>, <a href="https://github.com/VincentGranville/Point-Processes/blob/main/Book/PB_index.pdf">bibliogtaphy</a>, <a href="https://github.com/VincentGranville/Point-Processes/blob/main/Book/PB_index.pdf">index</a>, <a href="https://github.com/VincentGranville/Point-Processes/blob/main/Book/PB_index.pdf">list of figures</a>, and <a href="https://github.com/VincentGranville/Point-Processes/blob/main/Book/PB-exercises.pdf">list of exercises</a>. Source code, videos, Excel spreadsheets, data sets are, and figures from the book, are in the following folders: 
 
@@ -16,4 +20,4 @@ This folder contains the <a href="https://github.com/VincentGranville/Point-Proc
   <li><a href="https://github.com/VincentGranville/Point-Processes/tree/main/Images">Images</a></li>
 </ul>
 
-Detailed description of the code and other files listed in this GitHub repository are in the textbook. See section <i>Source Code, Data Sets, Videos, Excel Spreadsheets</i> in the textbook, and in other relevant sections where the material is discussed.
+Detailed description of the code, data sets, Excel spreadsheets and videos (including how to produce them)  are in the textbook. See section <i>Source Code, Data Sets, Videos, Excel Spreadsheets</i> in the textbook, and in other relevant sections where the material is discussed.
