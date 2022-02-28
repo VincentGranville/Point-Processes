@@ -1,4 +1,10 @@
-In construction. The book will be available in February 2022, on <a href="http://www.datashaping.com">DataShaping.com</a>. This folder contains the following extracts: table of content, index, introduction, bibliography, target audience, and the list of figures. Other extracts and related material are available in the following folders:
+The book is published by <a href="http://www.datashaping.com">Data Shaping Solutions, LLC</a>. It is currently available on the following platforms:
+
+<ul> 
+  <li><a hrefs="https://www.lulu.com/en/us/shop/vincent-granville/off-the-beaten-path-tutorial-stochastic-processes-and-simulations-volume-1/ebook/product-kqwz5e.html?page=1&pageSize=4
+"></a></li>
+
+This folder contains the following extracts from the: table of content, index, introduction, bibliography, target audience, and the list of figures. Source code, videos, Excel spreadsheets, data sets are accessible in the following folders: 
 
 <ul>
   <li><a href="https://github.com/VincentGranville/Point-Processes/tree/main/Videos">Videos</a></li>
