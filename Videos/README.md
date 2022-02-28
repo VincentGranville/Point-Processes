@@ -1,5 +1,5 @@
 
-See my <a href="https://github.com/VincentGranville/Point-Processes">my book</a>  to find out the story behind these videos, how they were created, and what they represent. The following videos are available on YouTube:
+See  <a href="https://github.com/VincentGranville/Point-Processes/blob/main/Book/README.md">my textbook</a>  to find out the story behind these videos, how they were created, and what they represent. The following videos are available on YouTube:
 
 <ul>
   <li><a href="https://youtu.be/H77ULp6HVsE">Riemann zeta function</a></li>
