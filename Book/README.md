@@ -16,4 +16,4 @@ This folder contains the <a href="https://github.com/VincentGranville/Point-Proc
   <li><a href="https://github.com/VincentGranville/Point-Processes/tree/main/Images">Images</a></li>
 </ul>
 
-Detailed description of the code and various files are in the textbook in the section <i>Source Code, Data, Excel Spreadsheets</i>, and in other relevant sections where the material is discussed.
+Detailed description of the code and other files listed in this GitHub repository are in the textbook. See section <i>Source Code, Data Sets, Videos, Excel Spreadsheets</i> in the textbook, and in other relevant sections where the material is discussed.
