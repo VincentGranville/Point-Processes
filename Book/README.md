@@ -2,7 +2,7 @@
 
 This scratch course on stochastic processes covers significantly more material than usually found in traditional books or classes. The approach is original:  I introduce a new yet intuitive type of random structure called perturbed lattice or Poisson-binomial process, as the gateway to all the stochastic processes. Such models have started to gain considerable momentum recently, especially in sensor data, cellular networks, chemistry, physics and engineering applications. I present state-of-the-art material in simple words, in a compact style, including new research developments and open problems. I focus on the methodology and principles, providing the reader with solid foundations and numerous resources: theory, applications, illustrations, statistical inference, references, glossary, educational spreadsheet, source code, stochastic simulations, original exercises, videos and more.
 
-The textbook (96 pages) is published by <a href="http://www.datashaping.com">Data Shaping Solutions, LLC</a>. It is currently available on <a href="https://bit.ly/3vr6ka5">Lulu</a>. See also the blog post about this book on MachineLearningRecipes.com, <a href="https://machinelearningrecipes.com/blog/post/1687564/stochastic-processes-and-simulations">here</a>.
+You can purchase our textbook on <a href="https://machinelearningrecipes.com/store/product/p_2845521">MachineLearningRecipes.com</a>.
 
 <img src="https://github.com/VincentGranville/Point-Processes/blob/main/Book/av_demo1000.png" width="500" height="500" class="center">
 
