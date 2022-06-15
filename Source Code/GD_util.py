@@ -30,7 +30,7 @@ def GD_Maps(bitmap,Nprocess,window,nloop,height,width,img_cluster,img_density):
   #---------------------------------------------------------------------
   # PART 2: Filter bitmap and densityMap 
 
-  for loop in range(nloop): #  ($loop=0; $loop<$nloop; $loop++) # BEGIN 1201
+  for loop in range(nloop): #  
 
     print("loop",loop,"out of",nloop)
     for pixelX in range(0,width): 
