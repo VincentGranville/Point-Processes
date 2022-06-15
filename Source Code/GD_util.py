@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw           # ImageDraw to draw rectangles etc.
 def GD_Maps(bitmap,Nprocess,window,nloop,height,width,img_cluster,img_density):
 
   #---------------------------------------------------------------------
-  # PART 1: Allocate first image (clustering), allocate colors (palette)
+  # PART 1: Allocate first image (clustering), including colors (palette)
 
   img1  = Image.new( mode = "RGBA", size = (width, height), color = (0, 0, 0) )
   pix1  = img1.load()   # pix[x,y]=col[n] to modify the RGB color of a pixel
@@ -19,6 +19,13 @@ def GD_Maps(bitmap,Nprocess,window,nloop,height,width,img_cluster,img_density):
     col1.append((255,255,255,255))
   oldBitmap = [[255 for k in range(height)] for h in range(width)]
   densityMap= [[0.0 for k in range(height)] for h in range(width)]
+  for pixelX in range(0,width): 
+    for pixelY in range(0,height): 
+      processID=bitmap[pixelX][pixelY]
+      pix1[pixelX,pixelY]=col1[processID] 
+  draw1.rectangle((0,0,width-1,height-1), outline ="black",width=1)
+  fname=img_cluster+'.png'
+  img1.save(fname)
 
   #---------------------------------------------------------------------
   # PART 2: Filter bitmap and densityMap 
