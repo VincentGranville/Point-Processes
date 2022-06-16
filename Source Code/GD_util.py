@@ -1,6 +1,7 @@
+import math
 from PIL import Image, ImageDraw           # ImageDraw to draw rectangles etc.
 
-def GD_Maps(bitmap,Nprocess,window,nloop,height,width,img_cluster,img_density):
+def GD_Maps(method,bitmap,Nprocess,window,nloop,height,width,img_cluster,img_density):
 
   #---------------------------------------------------------------------
   # PART 1: Allocate first image (clustering), including colors (palette)
@@ -55,14 +56,17 @@ def GD_Maps(bitmap,Nprocess,window,nloop,height,width,img_cluster,img_density):
               x-=width  # boundary effect correction
             if y>=height: 
               y-=height # boundary effect correction
-            dist2=(1+u**2 + v**2)**0.5  # ** is the power operator
+            if method == 0:
+              dist2=1
+            else: 
+              dist2=1/math.sqrt(1+u*u + v*v)
             processID=oldBitmap[x][y]
             if processID < 255: 
-              count[processID]=count[processID]+1/dist2
+              count[processID]=count[processID]+dist2
               if count[processID]>maxcount: 
                 maxcount=count[processID]
                 topProcessID=processID
-              density=density+1/dist2 
+              density=density+dist2 
         density=density/(10**loop)   # 10 at power loop (dampening)
         densityMap[pixelX][pixelY]=densityMap[pixelX][pixelY]+density
         bitmap[pixelX][pixelY]=topProcessID
