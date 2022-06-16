@@ -12,6 +12,8 @@ Nprocess=5       # number of processes in the process superimposition
 seed=82431      # arbitrary number
 random.seed(seed) # initialize random generator 
 s=0.15  # scaling factor
+method=1  # method=0 is fastest
+NNflag=False
 epsilon=0.0000000001 # for numerical stability
 
 sep="\t"      # TAB character 
@@ -77,74 +79,77 @@ OUT.close()
 #------------------------------------------------------------------------
 # PART 3: Find nearest neighbor points, and compute nearest neighbor distances.
 
-OUT  = open("PB_NN_dist_small.txt", "w")     # the points of the process 
-OUTf = open("PB_NN_dist_full.txt", "w") # the same points modulo 2/lambda both in x and y directions
+if NNflag:
 
-NNx=[]
-NNy=[]
-NNidx=[]
-NNidxHash={}
+  OUT  = open("PB_NN_dist_small.txt", "w")     # the points of the process 
+  OUTf = open("PB_NN_dist_full.txt", "w") # the same points modulo 2/lambda both in x and y directions
 
-for i in range(m):
-  NNx.append(0.0)
-  NNy.append(0.0)
-  NNidx.append(-1)
-  mindist=99999999
-  flag=-1
-  if a[i]>-20 and a[i]<20 and b[i]>-20 and b[i]<20: 
-    flag=0;
-    for j in range(m):
-      dist=math.sqrt((a[i]-a[j])**2 + (b[i]-b[j])**2) 
-      if dist<=mindist+epsilon and i!=j: 
-        NNx[i]=a[j]  # x-coordinate of nearest neighbor of point $i
-        NNy[i]=b[j]  # y-coordinate of nearest neighbor of point $i
-        NNidx[i]=j    # indicates that point $j is nearest neighbor to point $i
-        #  NNidxHash[i] is the list of points having point i as nearest neighbor;
-        #  these points are separated by "~" (usually only one point in NNidxHash[i]
-        #  unless the simulated points are exactly on a lattice, e.g. if s = 0)
-        if abs(dist-mindist) < epsilon: 
-          NNidxHash[i]=NNidxHash[i]+"~"+str(j) 
-        else:    
-          NNidxHash[i]=str(j) 
-        mindist=dist 
-    if i % 100 == 0: 
-      print("Finding Nearest neighbors of point",i)
-    line=str(i)+"\t"+str(mindist)+"\n"
-    OUT.write(line) 
-    line=str(i)+"\t"+str(NNidx[i])+"\t"+str(NNidxHash[i])+"\t"+str(a[i])+"\t" 
-    line=line+str(b[i])+"\t"+str(NNx[i])+"\t"+str(NNy[i])+"\t"+str(mindist)+"\n"
-    OUTf.write(line) 
+  NNx=[]
+  NNy=[]
+  NNidx=[]
+  NNidxHash={}
 
-OUTf.close()
-OUT.close()
+  for i in range(m):
+    NNx.append(0.0)
+    NNy.append(0.0)
+    NNidx.append(-1)
+    mindist=99999999
+    flag=-1
+    if a[i]>-20 and a[i]<20 and b[i]>-20 and b[i]<20: 
+      flag=0;
+      for j in range(m):
+        dist=math.sqrt((a[i]-a[j])**2 + (b[i]-b[j])**2) 
+        if dist<=mindist+epsilon and i!=j: 
+          NNx[i]=a[j]  # x-coordinate of nearest neighbor of point $i
+          NNy[i]=b[j]  # y-coordinate of nearest neighbor of point $i
+          NNidx[i]=j    # indicates that point $j is nearest neighbor to point $i
+          #  NNidxHash[i] is the list of points having point i as nearest neighbor;
+          #  these points are separated by "~" (usually only one point in NNidxHash[i]
+          #  unless the simulated points are exactly on a lattice, e.g. if s = 0)
+          if abs(dist-mindist) < epsilon: 
+            NNidxHash[i]=NNidxHash[i]+"~"+str(j) 
+          else:    
+            NNidxHash[i]=str(j) 
+          mindist=dist 
+      if i % 100 == 0: 
+        print("Finding Nearest neighbors of point",i)
+      line=str(i)+"\t"+str(mindist)+"\n"
+      OUT.write(line) 
+      line=str(i)+"\t"+str(NNidx[i])+"\t"+str(NNidxHash[i])+"\t"+str(a[i])+"\t" 
+      line=line+str(b[i])+"\t"+str(NNx[i])+"\t"+str(NNy[i])+"\t"+str(mindist)+"\n"
+      OUTf.write(line) 
+
+  OUTf.close()
+  OUT.close()
 
 #------------------------------------------------------------------------
 # PART 4: Produce data to use in R code that generates the nearest neighbors picture.
 
-OUT  = open("PB_r.txt","w")     
-OUT.write("idx\tnNN\tNNindex\ta\tb\taNN\tbNN\tprocessID\tNNprocessID\n")
+if NNflag:
 
-for idx in NNidxHash:
-  NNlist=NNidxHash[idx]
-  list=NNlist.split("~")
-  nelts=len(list)
-  for n in range(nelts): 
-    NNindex=int(list[n])
-    line=str(idx)+"\t"+str(n)+"\t"+str(NNindex)+"\t"+str(a[idx])+"\t"+str(b[idx])
-    line=line+"\t"+str(a[NNindex])+"\t"+str(b[NNindex])+"\t"+str(process[idx])
-    line=line+"\t"+str(process[NNindex])+"\n"
-    OUT.write(line)  
+  OUT  = open("PB_r.txt","w")     
+  OUT.write("idx\tnNN\tNNindex\ta\tb\taNN\tbNN\tprocessID\tNNprocessID\n")
+
+  for idx in NNidxHash:
+    NNlist=NNidxHash[idx]
+    list=NNlist.split("~")
+    nelts=len(list)
+    for n in range(nelts): 
+      NNindex=int(list[n])
+      line=str(idx)+"\t"+str(n)+"\t"+str(NNindex)+"\t"+str(a[idx])+"\t"+str(b[idx])
+      line=line+"\t"+str(a[NNindex])+"\t"+str(b[NNindex])+"\t"+str(process[idx])
+      line=line+"\t"+str(process[NNindex])+"\n"
+      OUT.write(line)  
                 
-OUT.close()
+  OUT.close()
 
 #------------------------------------------------------------------------
 # PART 5: Creates density and cluster images.
 
-window=10   # determines size of local filter [the bigger, the smoother]
+window=20   # determines size of local filter [the bigger, the smoother]
 nloop=3     # number of times the image is filtered [the bigger, the smoother]
 img_cluster="PB-cluster"  # use for output image filenames
 img_density="PB-density"  # use for output image filenames
 
-from GD_util import *
-GD_Maps(bitmap,Nprocess,window,nloop,height,width,img_cluster,img_density)
-
+from GD_util import * 
+GD_Maps(method,bitmap,Nprocess,window,nloop,height,width,img_cluster,img_density)
