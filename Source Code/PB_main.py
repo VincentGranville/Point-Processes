@@ -1,4 +1,4 @@
-# PB_main.py
+# PB_main.py [www.MLTechniques.com]
 
 import math
 import random
