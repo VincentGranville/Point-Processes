@@ -1,4 +1,4 @@
-# PB_NN_graph.py
+# PB_NN_graph.py [www.MLTechniques.com]
 #
 # Compute connected components of nearest neighbor graph
 # Input file has two tab-separated columns: idx and idx2
