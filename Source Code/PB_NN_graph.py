@@ -1,4 +1,4 @@
-# PB_NN_graph.py [www.MLTechniques.com]
+# PB_NN_graph.py
 #
 # Compute connected components of nearest neighbor graph
 # Input file has two tab-separated columns: idx and idx2
@@ -37,7 +37,7 @@ NNIdx={}
 idxHash={}
 
 n=0
-file=open('test.txt',"r") # input file 
+file=open('PB_dist_full.txt',"r") # input file 
 lines=file.readlines()
 for aux in lines:
   idx =int(aux.split('\t')[0])
