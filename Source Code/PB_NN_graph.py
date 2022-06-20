@@ -98,24 +98,24 @@ while i<n:
     while nstack>0:  
       idx=stack[nstack-1]
       if (idx not in status) or status[idx] != -1: 
-            status[idx]=-1  # idx considered processed
-            if i<n:  
-              if point[i] in cliqueHash:
-                cliqueHash[point[i]]=cliqueHash[point[i]]+"~"+str(idx)
-              else: 
-                cliqueHash[point[i]]="~"+str(idx)
-            nstack=nstack-1 
-            aux=hash[idx].split("~")
-            aux.pop(0)  # remove first (empty) element of aux
-            for idx2 in aux:
-                # loop over all points that have point idx as nearest neighbor
-                idx2=int(idx2)
-                if idx2 not in status or status[idx2] != -1:   
-                  # add point idx2 on the stack if it is not there yet
-                  if idx2 not in onStack: 
-                    stack[nstack]=idx2
-                    nstack=nstack+1
-                  onStack[idx2]=1
+        status[idx]=-1  # idx considered processed
+        if i<n:  
+          if point[i] in cliqueHash:
+            cliqueHash[point[i]]=cliqueHash[point[i]]+"~"+str(idx)
+          else: 
+            cliqueHash[point[i]]="~"+str(idx)
+        nstack=nstack-1 
+        aux=hash[idx].split("~")
+        aux.pop(0)  # remove first (empty) element of aux
+        for idx2 in aux:
+          # loop over all points that have point idx as nearest neighbor
+          idx2=int(idx2)
+          if idx2 not in status or status[idx2] != -1:   
+            # add point idx2 on the stack if it is not there yet
+            if idx2 not in onStack: 
+              stack[nstack]=idx2
+              nstack=nstack+1
+            onStack[idx2]=1
 
 #-------------------------------------------------------------------------
 # PART 3: Save results.
