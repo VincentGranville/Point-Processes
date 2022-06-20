@@ -24,7 +24,7 @@ for ($h=-30; $h<=30; $h+=1) {
          for ($m=0; $m<$M; $m++) {
              $ran1=rand();
              $ran2=rand();
-             $factor=log($ran2/(1-$rand2));
+             $factor=log($ran2/(1-$ran2));
              $x1=$x+$factor*cos(2*$pi*$ran1);
              $y1=$y+$factor*sin(2*$pi*$ran1);
              print OUT "$h\t$k\tLocal\t$x1\t\t$y1\n";
