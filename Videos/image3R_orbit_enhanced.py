@@ -151,7 +151,7 @@ for k in range (2,nframe,1): # loop over time, each t corresponds to an image
     # output curent frame to a png file
     img2.save(fname)     # write png image on disk
     flist.append(fname)  # add its filename (fname) to flist
-    images.append(img2)  # to produce Gif image
+#    images.append(img2)  # to produce Gif image
 
 # output video file
 clip = moviepy.video.io.ImageSequenceClip.ImageSequenceClip(flist, fps=20) 
