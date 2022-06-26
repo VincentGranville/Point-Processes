@@ -129,7 +129,7 @@ for k in range (2,nframe,1): # loop over time, each t corresponds to an image
         draw.line((int(x0[n]),int(y0[n]),int(x),int(y)), fill =colp[n], width = 0)
         if ShowDots:
           draw.ellipse((x-dot, y-dot, x+dot, y+dot), fill =colp[n])
-        else:
+        else: 
           copyFlag=True
           drawCopy.ellipse((x-8, y-8, x+8, y+8), fill =colp[n]) ####
       t[n]=t[n]+step
