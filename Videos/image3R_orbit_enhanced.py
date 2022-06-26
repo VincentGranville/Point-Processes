@@ -11,7 +11,7 @@ random.seed(100)
 
 #--- Global variables ---
 
-m=1               # number of orbits (one for each value of sigma) 
+m=3               # number of orbits (one for each value of sigma) 
 nframe=20000      # number of images created in memory
 ShowOrbit=True 
 ShowDots=False
@@ -63,12 +63,12 @@ for n in range (0,m):
   x0.append(1.0)
   y0.append(0.0)
   t.append(0.0)       # start with t=0.0
-sigma.append(0.75)
+sigma.append(0.50)
 sigma.append(0.75) 
 sigma.append(1.25) 
-colp.append((0,0,255,80))
-colp.append((255,0,0,80))
-colp.append((255,180,0,80))
+colp.append((255,0,0,127))
+colp.append((0,0,255,127))
+colp.append((255,180,0,127))
 
 if ShowOrbit:
   minx=-2 
@@ -113,9 +113,9 @@ for k in range (2,nframe,1): # loop over time, each t corresponds to an image
     for n in range (0,m):
       string=string+ " | " + str(t[n])
     print(string)
+  if k%r==0: 
+    imgCopy.paste(img, (0, 0))
   for n in range (0,m):  # loop over the m orbits
-    if k%r==0: 
-      imgCopy.paste(img, (0, 0))
     if ShowOrbit:
       # save old value of etax[n], etay[n]
       x0.insert(n,width*(etax[n]-minx)/rangex)  
@@ -131,7 +131,7 @@ for k in range (2,nframe,1): # loop over time, each t corresponds to an image
           draw.ellipse((x-dot, y-dot, x+dot, y+dot), fill =colp[n])
         else:
           copyFlag=True
-          drawCopy.ellipse((x-8, y-8, x+8, y+8), fill =(255,0,0)) ####
+          drawCopy.ellipse((x-8, y-8, x+8, y+8), fill =colp[n]) ####
       t[n]=t[n]+step
     else:
       draw.ellipse((x-dot, y-dot, x+dot, y+dot), fill =colp[n]) 
