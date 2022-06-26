@@ -12,7 +12,7 @@ random.seed(100)
 #--- Global variables ---
 
 m=3               # number of orbits (one for each value of sigma) 
-nframe=20000      # number of images created in memory
+nframe=30000      # number of images created in memory
 ShowOrbit=True 
 ShowDots=False
 count=0           # frame counter 
@@ -66,9 +66,9 @@ for n in range (0,m):
 sigma.append(0.50)
 sigma.append(0.75) 
 sigma.append(1.25) 
-colp.append((255,0,0,127))
-colp.append((0,0,255,127))
-colp.append((255,180,0,127))
+colp.append((255,0,0,255))
+colp.append((0,0,255,255))
+colp.append((255,180,0,255))
 
 if ShowOrbit:
   minx=-2 
@@ -129,9 +129,9 @@ for k in range (2,nframe,1): # loop over time, each t corresponds to an image
         draw.line((int(x0[n]),int(y0[n]),int(x),int(y)), fill =colp[n], width = 0)
         if ShowDots:
           draw.ellipse((x-dot, y-dot, x+dot, y+dot), fill =colp[n])
-        else: 
+        else:
           copyFlag=True
-          drawCopy.ellipse((x-8, y-8, x+8, y+8), fill =colp[n]) ####
+          drawCopy.ellipse((x-10, y-10, x+10, y+10), fill =colp[n]) ####
       t[n]=t[n]+step
     else:
       draw.ellipse((x-dot, y-dot, x+dot, y+dot), fill =colp[n]) 
@@ -151,7 +151,7 @@ for k in range (2,nframe,1): # loop over time, each t corresponds to an image
     # output curent frame to a png file
     img2.save(fname)     # write png image on disk
     flist.append(fname)  # add its filename (fname) to flist
-#    images.append(img2)  # to produce Gif image
+#   images.append(img2)  # to produce Gif image
 
 # output video file
 clip = moviepy.video.io.ImageSequenceClip.ImageSequenceClip(flist, fps=20) 
